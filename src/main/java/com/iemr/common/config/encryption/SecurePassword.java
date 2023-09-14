@@ -72,7 +72,7 @@ public class SecurePassword {
 		byte[] hash = fromHex(parts[2]);
 		if (iterations == 1000) {
 			PBEKeySpec spec = new PBEKeySpec(originalPassword.toCharArray(), salt, 1000, hash.length * 8);
-			SecretKeyFactory skf = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
+			SecretKeyFactory skf = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA512");
 			byte[] testHash = skf.generateSecret(spec).getEncoded();
 			int diff = hash.length ^ testHash.length;
 			for (int i = 0; (i < hash.length) && (i < testHash.length); i++) {
