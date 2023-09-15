@@ -260,7 +260,7 @@
 		<dependency>
 			<groupId>net.bytebuddy</groupId>
 			<artifactId>byte-buddy</artifactId>
-			<version>1.7.9</version>
+			<version>1.14.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.dbunit</groupId>
@@ -377,8 +377,7 @@
 									 $${server-hostname} $${server-port} ${server-id} $${server-username} 
 										$${server-password} 
 								</echo>
-								<concat destfile="${target-properties}" append="yes"
-									force="yes">
+								<concat destfile="${target-properties}" append="yes" force="yes">
 									<fileset file="${source-properties}">
 									</fileset>
 								</concat>
