@@ -190,7 +190,7 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.7.1</version><!--$NO-MVN-MAN-VER$ -->
+			<version>2.15.2</version><!--$NO-MVN-MAN-VER$ -->
 		</dependency>
 		<dependency>
 			<groupId>org.quartz-scheduler</groupId>
@@ -377,8 +377,7 @@
 									 $${server-hostname} $${server-port} ${server-id} $${server-username} 
 										$${server-password} 
 								</echo>
-								<concat destfile="${target-properties}" append="yes"
-									force="yes">
+								<concat destfile="${target-properties}" append="yes" force="yes">
 									<fileset file="${source-properties}">
 									</fileset>
 								</concat>
