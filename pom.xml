@@ -179,7 +179,7 @@
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
-			<version>20160212</version><!--$NO-MVN-MAN-VER$ -->
+			<version>20231013</version><!--$NO-MVN-MAN-VER$ -->
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>
@@ -377,8 +377,7 @@
 									 $${server-hostname} $${server-port} ${server-id} $${server-username} 
 										$${server-password} 
 								</echo>
-								<concat destfile="${target-properties}" append="yes"
-									force="yes">
+								<concat destfile="${target-properties}" append="yes" force="yes">
 									<fileset file="${source-properties}">
 									</fileset>
 								</concat>
