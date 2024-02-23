@@ -283,7 +283,7 @@
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
-			<version>5.0.0.RELEASE</version><!--$NO-MVN-MAN-VER$ -->
+			<version>5.8.10</version><!--$NO-MVN-MAN-VER$ -->
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -377,8 +377,7 @@
 									 $${server-hostname} $${server-port} ${server-id} $${server-username} 
 										$${server-password} 
 								</echo>
-								<concat destfile="${target-properties}" append="yes"
-									force="yes">
+								<concat destfile="${target-properties}" append="yes" force="yes">
 									<fileset file="${source-properties}">
 									</fileset>
 								</concat>
